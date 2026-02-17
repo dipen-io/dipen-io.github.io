@@ -206,7 +206,7 @@ export default function ProjectSection() {
           ref={descRef}
           className="absolute left-[4vw] top-[44vh] w-[32vw] text-mutedCream text-[clamp(0.875rem,1vw,1rem)] leading-relaxed"
         >
-          A full-stack social platform built for a political party during election 
+          A full-stack social platform built for a political party during election
           season—supporting content sharing, payments, and role-based access.
         </p>
 
@@ -233,7 +233,7 @@ export default function ProjectSection() {
           className="absolute left-[4vw] top-[76vh] flex gap-4"
         >
           <a
-            href="https://shorturl.at/Ukg2S"
+            href="https://play.google.com/store/apps/details?id=com.kodevana.bpf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary flex items-center gap-2 group"
