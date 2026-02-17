@@ -18,6 +18,7 @@ export default function ContactSection() {
     message: '',
   });
 
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Form submission logic would go here
@@ -170,6 +171,7 @@ export default function ContactSection() {
               <input
                 type="text"
                 placeholder="Your Name"
+                disabled
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 className="form-input"
@@ -180,6 +182,7 @@ export default function ContactSection() {
             <div>
               <input
                 type="email"
+                disabled
                 placeholder="Your Email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -191,6 +194,7 @@ export default function ContactSection() {
             <div>
               <textarea
                 placeholder="Your Message"
+                disabled
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 rows={4}
@@ -201,9 +205,10 @@ export default function ContactSection() {
 
             <button
               type="submit"
-              className="btn-primary flex items-center gap-2 group"
+              disabled
+              className="btn-primary flex items-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              <Send className="disabled w-4 h-4 transition-transform group-hover:translate-x-1" />
+              <Send className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               Send Message
             </button>
           </form>

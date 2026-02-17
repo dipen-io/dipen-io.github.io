@@ -31,7 +31,21 @@ const experiences = [
       'Ensured performance and scalability for election-season traffic',
     ],
   },
-];
+
+{
+  icon: Code,
+  role: 'Frontend Developer Intern (Remote)',
+  company: 'Last Minutes Deal',
+  period: 'Aug 2025 - Oct 2025',
+  description: 'Contributed to a production e-commerce platform using Next.js, improving UI performance and user experience.',
+  highlights: [
+    'Built responsive product pages and reusable UI components using Next.js and TypeScript',
+    'Implemented server-side rendering (SSR) for improved SEO and faster initial load times',
+    'Integrated REST APIs for product listings, cart functionality, and user authentication',
+    'Optimized performance using image optimization and lazy loading techniques',
+  ],
+},
+]
 
 export default function ExperienceSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -120,7 +134,7 @@ export default function ExperienceSection() {
         </h2>
 
         {/* Experience Cards */}
-        <div ref={cardsRef} className="space-y-12">
+        <div ref={cardsRef} className="space-y-2">
           {experiences.map((exp, index) => (
             <div
               key={index}

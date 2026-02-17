@@ -217,8 +217,8 @@ export default function HeroSection() {
           className="absolute left-[4vw] top-[56vh] w-[32vw]"
         >
           <p className="text-mutedCream text-[clamp(0.875rem,1.1vw,1rem)] leading-relaxed">
-            I'm Dipen Boro—a backend-focused developer who designs APIs, databases, and 
-            deployments that stay reliable under real-world load. I also craft clean, 
+            I'm Dipen Boro—a backend-focused developer who designs APIs, databases, and
+            deployments that stay reliable under real-world load. I also craft clean,
             responsive frontends when the project calls for it.
           </p>
         </div>
@@ -236,7 +236,7 @@ export default function HeroSection() {
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </a>
           <a
-            href="https://github.com/usernamedinesh"
+            href="https://github.com/dipen-io"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary flex items-center gap-2"
