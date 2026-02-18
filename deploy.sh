@@ -10,11 +10,18 @@
 npm run build
 git checkout --orphan main_temp
 git rm -rf .
+git checkout source -- dist
 mv dist/* .
 rm -rf dist
 git add .
 git commit -m "Deploy: $(date)"
-git push origin main_temp:main --force
-git branch -D main_temp
+git branch -M main
+git push -f origin main
 git checkout source
-git branch -D main_temp
+# git branch -D main_temp
+#
+#cleaner way
+
+npm run build
+git subtree push --prefix dist origin main
+# It DOES push automatically to the remote.
