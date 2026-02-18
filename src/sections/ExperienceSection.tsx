@@ -57,6 +57,12 @@ export default function ExperienceSection() {
     if (!section) return;
 
     const ctx = gsap.context(() => {
+       // ScrollTrigger.create({
+       //    trigger: section,
+       //    start: "top 80%",
+       //    id: "experience",
+       //  });
+
       // Title animation
       gsap.fromTo(
         titleRef.current,

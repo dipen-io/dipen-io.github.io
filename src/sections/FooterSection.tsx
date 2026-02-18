@@ -14,6 +14,11 @@ export default function FooterSection() {
     if (!section) return;
 
     const ctx = gsap.context(() => {
+         // ScrollTrigger.create({
+         //      trigger: section,
+         //      start: "top 90%",
+         //      id: "footer",
+         //    });
       gsap.fromTo(
         contentRef.current,
         { y: 12, opacity: 0 },
@@ -40,7 +45,7 @@ export default function FooterSection() {
       className="relative bg-charcoal py-8 z-40"
     >
       <div className="hairline absolute top-0 left-0 w-full" />
-      
+
       <div
         ref={contentRef}
         className="px-[8vw] flex flex-col md:flex-row items-center justify-between gap-4"

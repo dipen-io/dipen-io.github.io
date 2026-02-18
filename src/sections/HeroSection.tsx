@@ -258,7 +258,7 @@ export default function HeroSection() {
           className="absolute left-[4vw] top-[91vh] flex gap-5"
         >
           <a
-            href="https://github.com/usernamedinesh"
+            href="https://github.com/dinesh-io"
             target="_blank"
             rel="noopener noreferrer"
             className="text-cream hover:text-gold transition-colors"

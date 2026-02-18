@@ -31,6 +31,11 @@ export default function ContactSection() {
     if (!section) return;
 
     const ctx = gsap.context(() => {
+         // ScrollTrigger.create({
+         //      trigger: section,
+         //      start: "top 100%",
+         //      id: "contact",
+         //    });
       // Headline animation
       const headlineWords = headlineRef.current?.querySelectorAll('.headline-word');
       if (headlineWords) {
@@ -222,7 +227,7 @@ export default function ContactSection() {
           <div className="flex items-center gap-6">
             <span className="text-mutedCream text-sm">Find me on:</span>
             <a
-              href="https://github.com/usernamedinesh"
+              href="https://github.com/dipen-io"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-cream hover:text-gold transition-colors"

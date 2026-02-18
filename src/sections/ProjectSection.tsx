@@ -27,7 +27,7 @@ export default function ProjectSection() {
         scrollTrigger: {
           trigger: section,
           start: 'top top',
-          end: '+=130%',
+          end: '+=110%',
           pin: true,
           scrub: 0.6,
         },
